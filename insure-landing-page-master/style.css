@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+:root {
+  --darkviolet: hsl(256, 26%, 20%);
+  --greyishblue: hsl(216, 30%, 68%);
+  --verydarkviolet: hsl(270, 9%, 17%);
+  --darkgreyishviolet: hsl(273, 4%, 51%);
+  --verylightgrey: hsl(0, 0%, 98%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+  position: relative;
+}
+.navigationContainer {
+  background-color: var(--verylightgrey);
+  height: 4rem;
+  position: relative;
+  font-size: 1.6rem;
+  padding: 2.5rem 1.5rem;
+}
+.logo {
+  margin-top: -1rem;
+  margin-left: 8rem;
+  margin-bottom: 1.5rem;
+}
+.navigation {
+  position: absolute;
+  right: 15rem;
+  top: 1.5rem;
+}
+.checkbox {
+  display: none;
+}
+.navigationItems {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+.navigationItem {
+  margin-right: 2rem;
+  color: var(--darkgreyishviolet);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.navigationItem:hover {
+  border: 0.2rem solid var(--verydarkviolet);
+  padding: 0.3rem;
+  color: var(--verydarkviolet);
+}
+.mobileContainer {
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+}
+.mobile {
+  cursor: pointer;
+  position: relative;
+}
+.navigationOpen,
+.navigationClose {
+  position: absolute;
+  right: 3rem;
+  visibility: hidden;
+}
+.navigationOpen {
+  z-index: 1;
+}
+.headerContainer {
+  position: relative;
+}
+.header {
+  width: 100%;
+  height: 80vh;
+  background-color: var(--darkviolet);
+  font-family: 'DM Serif Display', serif;
+}
+.aboutUsDash,
+.headerDash {
+  display: inline-block;
+
+  margin-left: 10rem;
+  width: 5%;
+  height: 0.2rem;
+}
+.headerDash {
+  margin-top: 10rem;
+  background-color: var(--verylightgrey);
+}
+.headerContent {
+  margin-top: 3.5rem;
+  margin-left: 10.5rem;
+  color: var(--verylightgrey);
+}
+.headerHeading {
+  font-size: 5rem;
+  font-weight: lighter;
+}
+.headerHeading pre,
+.howWeWorkHeading pre {
+  font-size: inherit;
+  font-family: inherit;
+}
+.headerText {
+  font-weight: lighter;
+  font-size: 2.5rem;
+  font-family: inherit;
+}
+.headerButton {
+  background-color: inherit;
+  padding: 1rem 1.5rem;
+  margin-top: 3rem;
+  margin-left: 10rem;
+  border: 1px solid var(--verylightgrey);
+  color: var(--verylightgrey);
+  text-transform: uppercase;
+  font-family: inherit;
+}
+.imageContainer {
+  position: absolute;
+  top: 9rem;
+  right: 10rem;
+}
+.emptyWhiteSpace {
+  background-color: white;
+  height: 30rem;
+}
+
+.aboutUs {
+  background-color: var(--verylightgrey);
+}
+.aboutUsDash {
+  margin-top: 1rem;
+  background-color: var(--darkviolet);
+}
+.aboutUsHeading {
+  margin-left: 10rem;
+  font-family: 'DM Serif Display', serif;
+  font-size: 5rem;
+  font-weight: lighter;
+}
+.aboutUsProcess {
+  margin-top: 1.5rem;
+  margin-left: 10rem;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.aboutUsProcesses {
+  padding: 1.5rem 3rem;
+}
+.aboutUsProcessesHeading {
+  font-size: 3rem;
+  font-family: 'DM Serif Display', serif;
+  font-weight: lighter;
+  color: var(--darkviolet);
+}
+.aboutUsProcessesContent {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  font-family: inherit;
+  color: var(--darkgreyishviolet);
+}
+.howWeWork {
+  font-family: 'DM Serif Display', serif;
+  margin-left: 10rem;
+  margin-top: 5rem;
+  margin-bottom: 12rem;
+  background-color: var(--darkviolet);
+  width: 90%;
+  height: 20rem;
+  position: relative;
+  padding: 1rem 3rem;
+}
+.howWeWorkItems {
+  display: flex;
+  justify-content: space-around;
+}
+.howWeWorkHeading {
+  font-size: 5rem;
+  font-weight: lighter;
+  display: block;
+  color: var(--verylightgrey);
+}
+.howWeWorkButton {
+  background-color: inherit;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--verylightgrey);
+  color: var(--verylightgrey);
+  text-transform: uppercase;
+  font-family: inherit;
+  width: 20%;
+  height: 5rem;
+  margin-top: 5rem;
+}
+.howWeWorkSVG {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+}
+.footer {
+  background-color: var(--verylightgrey);
+}
+.footerHeading {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-gap: 2rem;
+}
+.socialMediaIcons {
+  grid-column: -1;
+}
+.socialMediaIcon:not(:last-of-type) {
+  margin-right: 1rem;
+}
