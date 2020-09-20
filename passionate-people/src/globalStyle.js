@@ -6,11 +6,13 @@ const GlobalStyle = createGlobalStyle`
     --secondaryGreen: #4CCCA7;
     --primaryPurple: #392D63;
     --primaryBlack: #0B0B0B;
+    --primaryGrey: #FAFAFA;
 }
 *, *::before, *::after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+    
 
 }
 html {
@@ -19,6 +21,7 @@ html {
 body {
     line-height: 1.69;
     font-family: 'DM Serif Display', serif;
+   background-color: #fafafa;
 }
 `;
 export default GlobalStyle;
